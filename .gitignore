@@ -1,27 +1,67 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
+# Node/Next.js
+node_modules/
+.next/
+.env
+.env.local
+.env.*.local
+out/
+build/
 
-# next.js
-/.next/
-/out/
+# Java/Spring Boot
+target/
+*.iml
+.idea/
+.classpath
+.project
+.settings/
+uploads/
+*.log
+*.jar
+*.war
+*.ear
 
-# production
-/build
+# OS
+Thumbs.db
+.DS_Store
 
-# debug
+# Misc
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
+pnpm-debug.log*
 
-# env files
-.env*
+# VSCode
+.vscode/
 
-# vercel
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# JetBrains
+*.iml
+.idea/
+
+# Spring Boot local config
+backend/src/main/resources/application-local.properties
+
+# Local environment variable scripts
+backend/setenv.ps1
+backend/setenv.sh
+
+# Ignore backend dependencies if present
+backend/node_modules/
+
+# Vercel
 .vercel
 
-# typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Test/coverage
+coverage/
+*.lcov
